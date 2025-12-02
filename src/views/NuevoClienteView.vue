@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <div>
+        <div class=" flex justify-end">
             <RouterLink to="inicio">
                 Volver
             </RouterLink>
