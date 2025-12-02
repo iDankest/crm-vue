@@ -5,10 +5,11 @@
 <template>
     <div>
         <div>
-            <RouterLink to="agregar-cliente">
-                Agregar cliente
+            <RouterLink to="inicio">
+                Volver
             </RouterLink>
         </div>
-        <h1 class="text-4xl font-extrabold text-slate-500">Clientes</h1>
+        <h1 class="text-4xl font-extrabold text-slate-500">Nuevo cliente</h1>
+
     </div>
 </template>
