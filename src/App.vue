@@ -3,6 +3,9 @@
 </script>
 
 <template>
+    <body class="bg-gray-600 min-h-screen">
+        
+   
     <header class="bg-slate-800">
         <div class="mx-auto max-w-6xl py-10">
             <h1 class="text-4xl font-extrabold text-white">
@@ -11,10 +14,10 @@
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto mt-10">
+    <main class="max-w-6xl mx-auto  mt-10">
     <RouterView />
     </main>
-
+ </body>
 </template>
 
 
