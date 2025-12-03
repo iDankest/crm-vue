@@ -1,7 +1,11 @@
 <script setup>
+    import axios from 'axios';
+    import { useRouter } from 'vue-router';
     import RouterLink from '../components/UI/RouterLink.vue';
     import Heading from '../components/UI/Heading.vue';
     import {FormKit} from '@formkit/vue'
+
+    const router = useRouter()
 
     defineProps({
         titulo: {
@@ -11,7 +15,12 @@
     })
 
     const handleSubmit = (data) => {
-        console.log(data)
+        axios.post('http://localhost:4000/clientes', data)
+            .then(respuesta => {
+                console.log(respuesta)
+                router.push({name : 'inicio'})
+            })
+            .catch(error => console.log(error))
     }
 </script>
 
