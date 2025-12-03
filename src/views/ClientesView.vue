@@ -32,6 +32,14 @@
         })
         .catch(error => console.log(error))
     }
+
+    const elminiarCliente = id => {
+        ClienteService.eliminarCliente(id)
+        .then(() => {
+            clientes.value = clientes.value.filter(cliente => cliente.id !== id)
+        })
+        .catch(error => console.log(error))
+    }
 </script>
 
 <template>
@@ -61,6 +69,7 @@
                         :key="cliente.id"
                         :cliente="cliente"
                         @actualizar-estado="actualizarEstado"
+                        @eliminar-cliente="elminiarCliente"
                     />
                   </tbody>
               </table>
