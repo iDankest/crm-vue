@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "id": "76dc",
+      "nombre": "Juan",
+      "apellido": "Sánchez",
+      "email": "1@qwq.com"
+    },
+    {
+      "id": "2bcb",
+      "nombre": "Juan LOL",
+      "apellido": "Sánchez",
+      "email": "1@qwq.com",
+      "telefono": "555-555-5555",
+      "empresa": "Reboot Academy",
+      "puesto": "Programador"
+    },
+    {
+      "id": "bec1",
+      "nombre": "Netflix",
+      "apellido": "Sánchez",
+      "email": "luzdivinasanchezsantana@gmail.com",
+      "telefono": "777-777-7777",
+      "empresa": "Digital Virgo",
+      "puesto": "Vagabundo por el mundo"
+    }
+  ]
+}
