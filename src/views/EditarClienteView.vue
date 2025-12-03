@@ -29,7 +29,9 @@
     })
 
     const handleSubmit = (data) => {
-
+        ClienteService.actualizarCliente(id , data)
+        .then(() => router.push({name : 'listado-clientes'}))
+        .catch(error => console.log(error))
     }
 </script>
 
@@ -46,7 +48,7 @@
             <div class="mx-auto md:w-1/2 py-10 px-6">
                 <FormKit 
                     type="form"
-                    submit-label="Agregar Cliente"
+                    submit-label="Guardar"
                     incomplete-message="No se pudo enviar"
                     @submit="handleSubmit"
                     :value="formData"
@@ -68,7 +70,7 @@
                 placeholder="Apellido del cliente"
                 validation="required"
                 :validation-messages="{required : 'El apellido del cliente es obligatorio'}"
-                v-model="formData.nombre"
+                v-model="formData.apellido"
                 />
                 <FormKit 
                 type="email"
@@ -77,7 +79,7 @@
                 placeholder="Email del cliente"
                 validation="required|email"
                 :validation-messages="{required : 'El email del cliente es obligatorio', email : 'Inserta un Email Válido'}"
-                v-model="formData.apellido"
+                v-model="formData.email"
                 />
                 <FormKit 
                 type="text"

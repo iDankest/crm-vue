@@ -2,13 +2,23 @@
   "clientes": [
     {
       "id": "6ccd",
-      "nombre": "Juan",
+      "nombre": "Antonio",
       "apellido": "Sánchez",
       "email": "1@qwq.com",
       "telefono": "777-777-7777",
       "empresa": "Reboot Academy",
       "puesto": "Programador",
-      "estado": 1
+      "estado": false
+    },
+    {
+      "id": "2219",
+      "nombre": "Netflix",
+      "apellido": "Robo",
+      "email": "42218302P@tudominio.com",
+      "telefono": "777-777-7777",
+      "empresa": "Digital Virgo",
+      "puesto": "Vagabundo por el mundo",
+      "estado": true
     }
   ]
 }
