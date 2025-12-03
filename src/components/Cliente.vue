@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from 'vue';
+import { RouterLink } from 'vue-router';
 
     const props = defineProps({
         cliente:{
@@ -26,7 +27,14 @@ import { computed } from 'vue';
 
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 ">
-         
+         <RouterLink 
+         to="/"
+         class=" text-indigo-600 hover:text-indigo-900 mr-5"
+         >Editar</RouterLink>
+
+         <button class=" text-red-600 hover:text-red-900 hover:cursor-pointer">
+            Eliminar
+         </button>
         </td>
     </tr>
 </template>

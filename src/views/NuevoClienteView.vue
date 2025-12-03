@@ -1,5 +1,5 @@
 <script setup>
-    import axios from 'axios';
+    import ClienteService from '@/services/ClienteService';
     import { useRouter } from 'vue-router';
     import RouterLink from '../components/UI/RouterLink.vue';
     import Heading from '../components/UI/Heading.vue';
@@ -15,10 +15,10 @@
     })
 
     const handleSubmit = (data) => {
-        axios.post('http://localhost:4000/clientes', data)
+        ClienteService.agregarCliente(data)
             .then(respuesta => {
                 console.log(respuesta)
-                router.push({name : 'inicio'})
+                router.push({name : 'listado-clientes'})
             })
             .catch(error => console.log(error))
     }
@@ -27,7 +27,7 @@
 <template>
     <div>
         <div class=" flex justify-end">
-            <RouterLink to="inicio">
+            <RouterLink to="listado-clientes">
                 Volver
             </RouterLink>
         </div>
